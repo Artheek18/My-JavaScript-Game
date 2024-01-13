@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-    }
-    canvas {
-      display: block;
-    }
-  </style>
-  <title>2D Platformer Template</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href = "styles.css"/>
+    <!--- {
+          margin: 0;
+          overflow: hidden;
+        }
+        canvas {
+          display: block;
+        }
+      </style> --->
+      <title>2D Platformer Template</title>
 </head>
 <body>
+  <div class="controls">
+    <label for="animations">Choose Animations:</label>
+    <select name="animations" id="animations">
+      <option value="idle">Idle</option>
+      <option value="jump">Jump</option>
+      <option value="fall">Fall</option>
+      <option value="run">Run</option>
+      <option value="dizzy">Dizzy</option>
+      <option value="sit">Sit</option>
+      <option value="roll">Roll</option>
+      <option value="bite">Bite</option>
+      <option value="ko">KO</option>
+      <option value="getHit">Get hit</option>
+    </select>
+  </div>
 
-<canvas id="gameCanvas" width="800" height="400"></canvas>
+      <canvas id="canvas1"></canvas>
 
-<script src="Game.js"></script>
+      <script src="script.js"></script>
 
 </body>
 </html>
